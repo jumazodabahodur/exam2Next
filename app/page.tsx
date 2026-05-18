@@ -114,7 +114,7 @@ export default function Home() {
 
     
       {viewingTodo && (
-        <div style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(0,0,0,0.5)", display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <div style={{ position: "fixed", width: "100%", height: "100%", background: "rgba(5)", display: "flex", justifyContent: "center", alignItems: "center" }}>
           <div style={{ background: "#fff", padding: "20px", borderRadius: "8px", width: "300px" }}>
             <h4 style={{ borderBottom: "1px solid #eee", paddingBottom: "10px" }}>Task Information</h4>
             <p><strong>ID:</strong> {viewingTodo.id}</p>
@@ -128,7 +128,7 @@ export default function Home() {
       )}
 
       {editingTodo && (
-        <div style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(0,0,0,0.5)", display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <div style={{ position: "fixed",  width: "100%", height: "100%", background: "rgba(5)", display: "flex", justifyContent: "center", alignItems: "center" }}>
           <div style={{ background: "#fff", padding: "20px", borderRadius: "8px", width: "280px" }}>
             <h4>Edit task</h4>
             <input type="text" value={editingName} onChange={(e) => setEditingName(e.target.value)} style={{ width: "92%", padding: "8px", marginBottom: "10px" }} />
@@ -141,7 +141,7 @@ export default function Home() {
       )}
 
       {deletingTodo && (
-        <div style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%", background: "rgba(0,0,0,0.5)", display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <div style={{ position: "fixed", width: "100%", height: "100%", background: "rgba(5)", display: "flex", justifyContent: "center", alignItems: "center" }}>
           <div style={{ background: "#fff", padding: "20px", borderRadius: "8px", width: "280px" }}>
             <h4>Delete?</h4>
             <p>{deletingTodo.name}</p>
